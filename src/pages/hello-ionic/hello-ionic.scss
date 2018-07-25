@@ -1,0 +1,159 @@
+page-hello-ionic {
+    .scroll-content {
+        background-color: #f5f5f5;
+    }
+    .custom-card {
+        .searchbar {
+            padding: 0 4px;
+            min-height: 38px;
+            border: 0;
+            border-radius: 2px;
+            background: rgba(0, 0, 0, 0.2);
+            .searchbar-input {
+                padding: 0 28px 0 32px;
+            }
+            
+        }
+
+        .searchbar-md {
+            .searchbar-search-icon {
+                left: 7px;
+                top: 5px;
+            }
+            .searchbar-input {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .profile-card {
+        display: flex;
+        margin-bottom: 10px;
+        .profile-info {
+            background-color: #fff;
+            padding: 10px;
+            flex: 1;
+            border-radius: 4px;
+            text-align: center;
+            border: 1px solid #e8e8e8;
+            .prof-img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 1px solid #ccc;
+                padding: 2px;
+                margin: 0 auto;
+            }
+            h5 {
+                font-size: 15px;
+                margin: 5px 0;
+            }
+            p {
+                margin: 0;
+                color: #d4c611;
+            }
+        }
+        .profile-content {
+            flex: 1;
+            padding: 15px 0 15px 15px;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .slide-title {
+        padding: 0;
+        font-size: 15px;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 7px;
+        padding-bottom: 5px;
+    }
+    .slide-title-sub {
+        font-size: 12px;
+        margin-bottom: 7px;
+        button {
+            font-size: 12px;
+        }
+    }
+    ion-slides {
+        height: 150px;
+        margin-bottom: 15px;
+    .swiper-container {
+        .swiper-slide {
+            width: 120px !important;
+            height: 145px!important;
+            margin: 0 5px;
+           background-color: #fff;
+           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+           border-radius:4px;
+           overflow: hidden;
+           padding: 0;
+           align-items: flex-start;
+
+           .slide-img {
+               height: 80px;
+               margin: 0px 0;
+               position: relative;
+               img {
+                   width: 100%;;
+                   border-radius: 4px;
+               }
+               .rating {
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: #16c54a;
+                color: #fff;
+                font-size: 11px;
+                padding: 3px;
+                border-bottom-right-radius: 4px;
+               }
+               .title {
+                color: #fff;
+                font-size: 10px;
+                position: relative;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                margin: 5px 0 0;
+                text-align: left;
+                line-height: 12px;
+                position: absolute;
+                left: 0;
+                background-color: rgba(12, 12, 12, 0.6901960784313725);
+                bottom: 0px;
+                padding: 3px 5px;
+                width: 100%;
+            }
+           }
+         
+        
+
+           .slide-content {
+               padding: 5px;
+            ion-label {
+                font-size: 11px;
+                color: #9c9b9b;
+                text-align: left;
+                margin: 2px 0;
+               }
+               p {
+                font-size: 10px;
+                color: #488aff;
+                text-align: left;
+                margin: 2px 0;
+                line-height: 10px;
+               }
+           }
+           
+        }
+        .swiper-slide:first-child {
+            margin-left: 0;
+        }
+        .swiper-pagination-bullet {
+            display: none;
+        }
+    
+    }
+}
+}
