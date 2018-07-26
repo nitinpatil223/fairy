@@ -19,7 +19,7 @@
 <ion-content padding>
 
   <!-- search location -->
-    <ion-card class="custom-card mt0">
+      <ion-card class="custom-card mt0">
         <ion-card-header>
             <ion-icon name="pin" color="danger"></ion-icon> Shinde Nagar, Bavdhan <button ion-button color="secondary" float-right clear class="small-custom-button">Change</button>
         </ion-card-header>
@@ -27,231 +27,96 @@
             <ion-searchbar></ion-searchbar>        
           </ion-card-content>
       </ion-card>
-
-      <!-- profile -->
-      <div class="profile-card">
-        <div class="profile-info mt0">
-          <div class="prof-img">
-            <img src="assets/imgs/profile-thumb.png">
-          </div>
-            <h5>Nitin Patil</h5>
-            <p>  <ion-icon name="ribbon"></ion-icon> Gold Member</p>
-        </div>
-        <div class="profile-content" text-center>
-            <button ion-button color="danger" block>Book Now</button>
-        </div>
+      <div class="card-background-page" no-padding>
+          <ion-row>
+              <ion-col no-padding>
+                  <ion-card>
+                    <div class="overlay"></div>
+                    <img src="assets/imgs/d1.jpg"/>
+                    <div class="card-title">Gold Award Winners</div>
+                    <div class="card-subtitle"> <ion-icon name="pin"></ion-icon> 41 Places</div>
+                  </ion-card>
+                </ion-col>
+          </ion-row>
+          <ion-row class="second-row">
+                  <ion-col col-6 class="pdl0">
+                  <ion-card>
+                      <div class="overlay"></div>
+                    <img src="assets/imgs/d2.jpg"/>
+                    <div class="card-title small"><span>Live Music</span></div>
+                    <div class="card-subtitle"> <ion-icon name="pin"></ion-icon> 41 Places</div>
+                  </ion-card>
+                </ion-col>
+                <ion-col col-6 class="pdr0">
+                  <ion-card>
+                      <div class="overlay"></div>
+                    <img src="assets/imgs/d1.jpg"/>
+                    <div class="card-title small"><span>Best Bars & Pubs</span></div>
+                    <div class="card-subtitle"> <ion-icon name="pin"></ion-icon> 41 Places</div>
+                  </ion-card>
+                </ion-col>
+                <ion-col col-6 class="pdl0">
+                  <ion-card>
+                      <div class="overlay"></div>
+                    <img src="assets/imgs/d3.jpg"/>
+                    <div class="card-title small"><span>Best Food</span></div>
+                    <div class="card-subtitle"> <ion-icon name="pin"></ion-icon> 41 Places</div>
+                  </ion-card>
+                </ion-col>
+                <ion-col col-6 class="pdr0">
+                    <ion-card>
+                        <div class="overlay"></div>
+                      <img src="assets/imgs/d4.jpg"/>
+                      <div class="card-title small"><span>New on Gold</span></div>
+                      <div class="card-subtitle"> <ion-icon name="pin"></ion-icon> 41 Places</div>
+                    </ion-card>
+                  </ion-col>
+            </ion-row>
       </div>
 
-      <!-- restaurants -->
+      <div padding>
+          <ion-segment [(ngModel)]="hotels">
+            <ion-segment-button value="all">
+              All
+            </ion-segment-button>
+            <ion-segment-button value="food">
+              Food
+            </ion-segment-button>
+            <ion-segment-button value="drinks">
+                Drinks
+              </ion-segment-button>
+          </ion-segment>
+        </div>
+        
+        <div [ngSwitch]="hotels">
+          <ion-list *ngSwitchCase="'all'">
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="assets/imgs/d1.jpg">
+              </ion-thumbnail>
+              <h2>Ruby</h2>
+            </ion-item>
 
-    <div class="slide-title">Recommended </div>
-     <div class="slide-title-sub">Dine-out restaurant <button ion-button color="secondary" float-right clear class="small-custom-button">See All</button></div>
-      <ion-slides pager>
-        <ion-slide>
-          <div class="slide-img">
-            <img src="assets/imgs/d1.jpg">
-            <div class="rating">
-              4.1
-            </div>
-            <p class="title">Benchmark IT Solutiions Pvt ltd</p>
-          </div>
-          <div class="slide-content">
-              <ion-label>Bavdhan Pune</ion-label>
-           <ion-label>Chicken Tandoor</ion-label>
-           <P>Dine in restaurant with a lake view! Reserve Now!</P>
-          </div>
-        </ion-slide>
-      
-        <ion-slide>
-            <div class="slide-img">
-              <img src="assets/imgs/d2.jpg">
-              <div class="rating">
-                3.8
-              </div>
-              <p class="title">Ambrosia Resort</p>
-            </div>
-            <div class="slide-content">
-                <ion-label>Bavdhan Pune</ion-label>
-             <ion-label>Chicken Tandoor</ion-label>
-             <P>Dine in restaurant with a lake view! Reserve Now!</P>
-            </div>
-          </ion-slide>
-          <ion-slide>
-              <div class="slide-img">
-                <img src="assets/imgs/d3.jpg">
-                <div class="rating">
-                  2.8
-                </div>
-                <p class="title">Rangala Punjab</p>
-              </div>
-              <div class="slide-content">
-                  <ion-label>Bavdhan Pune</ion-label>
-               <ion-label>Chicken Tandoor</ion-label>
-               <P>Dine in restaurant with a lake view! Reserve Now!</P>
-              </div>
-            </ion-slide>
-            <ion-slide>
-                <div class="slide-img">
-                  <img src="assets/imgs/d4.jpg">
-                  <div class="rating">
-                    4.1
-                  </div>
-                  <p class="title">Benchmark IT Solutiions</p>
-                </div>
-                <div class="slide-content">
-                    <ion-label>Bavdhan Pune</ion-label>
-                 <ion-label>Chicken Tandoor</ion-label>
-                 <P>Dine in restaurant with a lake view! Reserve Now!</P>
-                </div>
-              </ion-slide>
-              <ion-slide>
-                  <div class="slide-img">
-                    <img src="assets/imgs/d1.jpg">
-                    <div class="rating">
-                      4.1
-                    </div>
-                    <p class="title">Benchmark IT Solutiions</p>
-                  </div>
-                  <div class="slide-content">
-                      <ion-label>Bavdhan Pune</ion-label>
-                   <ion-label>Chicken Tandoor</ion-label>
-                   <P>Dine in restaurant with a lake view! Reserve Now!</P>
-                  </div>
-                </ion-slide>
-                <ion-slide>
-                    <div class="slide-img">
-                      <img src="assets/imgs/d2.jpg">
-                      <div class="rating">
-                        4.1
-                      </div>
-                      <p class="title">Benchmark IT Solutiions</p>
-                    </div>
-                    <div class="slide-content">
-                        <ion-label>Bavdhan Pune</ion-label>
-                     <ion-label>Chicken Tandoor</ion-label>
-                     <P>Dine in restaurant with a lake view! Reserve Now!</P>
-                    </div>
-                  </ion-slide>
-                  <ion-slide>
-                      <div class="slide-img">
-                        <img src="assets/imgs/d3.jpg">
-                        <div class="rating">
-                          4.1
-                        </div>
-                        <p class="title">Benchmark IT Solutiions</p>
-                      </div>
-                      <div class="slide-content">
-                          <ion-label>Bavdhan Pune</ion-label>
-                       <ion-label>Chicken Tandoor</ion-label>
-                       <P>Dine in restaurant with a lake view! Reserve Now!</P>
-                      </div>
-                    </ion-slide>
-      </ion-slides>
- 
-
-     <div class="slide-title-sub">Delivery restaurant <button ion-button color="secondary" float-right clear class="small-custom-button">See All</button></div>
-      <ion-slides pager>
-        <ion-slide>
-          <div class="slide-img">
-            <img src="assets/imgs/d1.jpg">
-            <div class="rating">
-              4.1
-            </div>
-            <p class="title">Benchmark IT Solutiions Pvt ltd</p>
-          </div>
-          <div class="slide-content">
-              <ion-label>Bavdhan Pune</ion-label>
-           <ion-label>Chicken Tandoor</ion-label>
-           <P>Dine in restaurant with a lake view! Reserve Now!</P>
-          </div>
-        </ion-slide>
-      
-        <ion-slide>
-            <div class="slide-img">
-              <img src="assets/imgs/d2.jpg">
-              <div class="rating">
-                3.8
-              </div>
-              <p class="title">Ambrosia Resort</p>
-            </div>
-            <div class="slide-content">
-                <ion-label>Bavdhan Pune</ion-label>
-             <ion-label>Chicken Tandoor</ion-label>
-             <P>Dine in restaurant with a lake view! Reserve Now!</P>
-            </div>
-          </ion-slide>
-          <ion-slide>
-              <div class="slide-img">
-                <img src="assets/imgs/d3.jpg">
-                <div class="rating">
-                  2.8
-                </div>
-                <p class="title">Rangala Punjab</p>
-              </div>
-              <div class="slide-content">
-                  <ion-label>Bavdhan Pune</ion-label>
-               <ion-label>Chicken Tandoor</ion-label>
-               <P>Dine in restaurant with a lake view! Reserve Now!</P>
-              </div>
-            </ion-slide>
-            <ion-slide>
-                <div class="slide-img">
-                  <img src="assets/imgs/d4.jpg">
-                  <div class="rating">
-                    4.1
-                  </div>
-                  <p class="title">Benchmark IT Solutiions</p>
-                </div>
-                <div class="slide-content">
-                    <ion-label>Bavdhan Pune</ion-label>
-                 <ion-label>Chicken Tandoor</ion-label>
-                 <P>Dine in restaurant with a lake view! Reserve Now!</P>
-                </div>
-              </ion-slide>
-              <ion-slide>
-                  <div class="slide-img">
-                    <img src="assets/imgs/d1.jpg">
-                    <div class="rating">
-                      4.1
-                    </div>
-                    <p class="title">Benchmark IT Solutiions</p>
-                  </div>
-                  <div class="slide-content">
-                      <ion-label>Bavdhan Pune</ion-label>
-                   <ion-label>Chicken Tandoor</ion-label>
-                   <P>Dine in restaurant with a lake view! Reserve Now!</P>
-                  </div>
-                </ion-slide>
-                <ion-slide>
-                    <div class="slide-img">
-                      <img src="assets/imgs/d2.jpg">
-                      <div class="rating">
-                        4.1
-                      </div>
-                      <p class="title">Benchmark IT Solutiions</p>
-                    </div>
-                    <div class="slide-content">
-                        <ion-label>Bavdhan Pune</ion-label>
-                     <ion-label>Chicken Tandoor</ion-label>
-                     <P>Dine in restaurant with a lake view! Reserve Now!</P>
-                    </div>
-                  </ion-slide>
-                  <ion-slide>
-                      <div class="slide-img">
-                        <img src="assets/imgs/d3.jpg">
-                        <div class="rating">
-                          4.1
-                        </div>
-                        <p class="title">Benchmark IT Solutiions</p>
-                      </div>
-                      <div class="slide-content">
-                          <ion-label>Bavdhan Pune</ion-label>
-                       <ion-label>Chicken Tandoor</ion-label>
-                       <P>Dine in restaurant with a lake view! Reserve Now!</P>
-                      </div>
-                    </ion-slide>
-      
-      </ion-slides>
- 
-
+          </ion-list>
+        
+          <ion-list *ngSwitchCase="'food'">
+            <ion-item>
+              <ion-thumbnail item-start>
+                  <img src="assets/imgs/d2.jpg">
+              </ion-thumbnail>
+              <h2>Luna</h2>
+            </ion-item>
+          </ion-list>
+          <ion-list *ngSwitchCase="'drinks'">
+              <ion-item>
+                <ion-thumbnail item-start>
+                    <img src="assets/imgs/d3.jpg">
+                </ion-thumbnail>
+                <h2>Luna</h2>
+              </ion-item>
+            </ion-list>
+        </div>
+        
+        
 </ion-content>
+
