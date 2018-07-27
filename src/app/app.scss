@@ -114,14 +114,31 @@ ion-list {
     }
 }
 
-//slides
-
+//segment
+.segment {
+    background-color: #fff;
+    margin: 10px 0;
+    .segment-button {
+        font-size: 13px !important;
+        height: 3.2rem!important;
+        line-height: 3rem!important;
+        color: #656464;
+        &.segment-activated {
+            border-color: #f53d3d;
+            color: #f53d3d;
+        }
+    }
+    
+}
 
 
 
 //common
 .mt0 {
     margin-top: 0 !important;
+}
+.pd3 {
+    padding: 3px;
 }
 
 .pdl0 {

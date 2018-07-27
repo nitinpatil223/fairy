@@ -28,7 +28,7 @@
           </ion-card-content>
       </ion-card>
       <div class="card-background-page" no-padding>
-          <ion-row>
+          <ion-row style="margin-bottom: 2px;">
               <ion-col no-padding>
                   <ion-card>
                     <div class="overlay"></div>
@@ -39,7 +39,7 @@
                 </ion-col>
           </ion-row>
           <ion-row class="second-row">
-                  <ion-col col-6 class="pdl0">
+                  <ion-col col-6 class="pdl0 pd3">
                   <ion-card>
                       <div class="overlay"></div>
                     <img src="assets/imgs/d2.jpg"/>
@@ -47,7 +47,7 @@
                     <div class="card-subtitle"> <ion-icon name="pin"></ion-icon> 41 Places</div>
                   </ion-card>
                 </ion-col>
-                <ion-col col-6 class="pdr0">
+                <ion-col col-6 class="pdr0 pd3">
                   <ion-card>
                       <div class="overlay"></div>
                     <img src="assets/imgs/d1.jpg"/>
@@ -55,7 +55,7 @@
                     <div class="card-subtitle"> <ion-icon name="pin"></ion-icon> 41 Places</div>
                   </ion-card>
                 </ion-col>
-                <ion-col col-6 class="pdl0">
+                <ion-col col-6 class="pdl0 pd3">
                   <ion-card>
                       <div class="overlay"></div>
                     <img src="assets/imgs/d3.jpg"/>
@@ -63,7 +63,7 @@
                     <div class="card-subtitle"> <ion-icon name="pin"></ion-icon> 41 Places</div>
                   </ion-card>
                 </ion-col>
-                <ion-col col-6 class="pdr0">
+                <ion-col col-6 class="pdr0 pd3">
                     <ion-card>
                         <div class="overlay"></div>
                       <img src="assets/imgs/d4.jpg"/>
@@ -74,7 +74,7 @@
             </ion-row>
       </div>
 
-      <div padding>
+      <div>
           <ion-segment [(ngModel)]="hotels">
             <ion-segment-button value="all">
               All
@@ -88,13 +88,59 @@
           </ion-segment>
         </div>
         
-        <div [ngSwitch]="hotels">
+        <div [ngSwitch]="hotels" class="hotel-list">
           <ion-list *ngSwitchCase="'all'">
             <ion-item>
               <ion-thumbnail item-start>
                 <img src="assets/imgs/d1.jpg">
+                <div class="overlay"></div>
+                <div class="rating">4.5</div>
+                <span class="gold"><span>Gold </span><span>1 + 1 ON DRINKS</span></span>
               </ion-thumbnail>
-              <h2>Ruby</h2>
+              <h2>Ambrosia Resorts</h2>
+              <p>Bavdhan, Pune</p>
+              <p>Lunch Denner, Cafe</p>
+              <p> &#x20B9; 600/- for two peoples</p>
+              <p class="open">Open Now</p>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="assets/imgs/d2.jpg">
+                <div class="overlay"></div>
+                <div class="rating">4.5</div>
+                <span class="gold"><span>Gold </span><span>1 + 1 ON FOOD</span></span>
+              </ion-thumbnail>
+              <h2>The Up & Above</h2>
+              <p>Bavdhan, Pune</p>
+              <p>Lunch Denner, Cafe</p>
+              <p>&#x20B9; 600/- for two peoples</p>
+              <p class="open">Open Now</p>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="assets/imgs/d3.jpg">
+                <div class="overlay"></div>
+                <div class="rating">4.5</div>
+                <span class="gold"><span>Gold </span><span>1 + 1 ON DRINKS</span></span>
+              </ion-thumbnail>
+              <h2>The Golden Wind</h2>
+              <p>Bavdhan, Pune</p>
+              <p>Lunch Denner, Cafe</p>
+              <p>&#x20B9; 1300/- for two peoples</p>
+              <p class="open">Open Now</p>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="assets/imgs/d4.jpg">
+                <div class="overlay"></div>
+                <div class="rating">4.5</div>
+                <span class="gold"><span>Gold </span><span>1 + 1 ON FOOD</span></span>
+              </ion-thumbnail>
+              <h2> The Orchid Hotel </h2>
+              <p>Bavdhan, Pune</p>
+              <p>Lunch Denner, Cafe</p>
+              <p>&#x20B9; 1500/- for two peoples</p>
+              <p class="open">Open Now</p>
             </ion-item>
 
           </ion-list>
@@ -120,3 +166,8 @@
         
 </ion-content>
 
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Footer</ion-title>
+  </ion-toolbar>
+</ion-footer>
