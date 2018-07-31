@@ -1,0 +1,27 @@
+page-filter {
+    .scroll-content {
+        margin-bottom: 50px !important;
+        ion-item {
+            padding-left: 0;
+        }
+        h4 {
+            font-size: 16px;
+            margin-top: 40px;
+        }
+        ion-select {
+            max-width: 100%;
+            flex: 1;
+        }
+    }
+    ion-footer {
+        ion-toolbar {
+            min-height: 50px!important;
+            padding: 0!important;
+            .button {
+                height: 50px!important;
+                border-radius: 0!important;
+                margin: 0!important;
+            }
+        }
+    }
+}

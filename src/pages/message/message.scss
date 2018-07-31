@@ -1,0 +1,16 @@
+page-message {
+    .scroll-content {
+        margin-bottom: 50px !important;
+    }
+    ion-footer {
+        ion-toolbar {
+            min-height: 50px!important;
+            padding: 0!important;
+            .button {
+                height: 50px!important;
+                border-radius: 0!important;
+                margin: 0!important;
+            }
+        }
+    }
+}

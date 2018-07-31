@@ -5,8 +5,8 @@
     </button>
     <ion-title></ion-title>
     <ion-buttons end>
-      <button ion-button icon-only color="danger">
-        <ion-icon name="bookmark"></ion-icon>
+      <button ion-button icon-only color="danger" (click)="filter()">
+        <ion-icon name="funnel" ></ion-icon>
       </button>
       <button ion-button icon-only color="danger">
         <ion-icon name="notifications"></ion-icon>
@@ -73,7 +73,7 @@
                   </ion-col>
             </ion-row>
       </div>
-
+<h6 class="total-res">456 Restaurant</h6>
       <div>
           <ion-segment [(ngModel)]="hotels">
             <ion-segment-button value="all">
@@ -170,12 +170,20 @@
               </ion-item>
             </ion-list>
         </div>
-        
+        <ion-fab bottom right>
+            <button ion-fab mini (click)="message()"><ion-icon name="mail"></ion-icon></button>
+            <!-- <ion-fab-list>
+              <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+              <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+              <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+              <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+            </ion-fab-list> -->
+          </ion-fab>
         
 </ion-content>
 
-<ion-footer>
+<!-- <ion-footer>
   <ion-toolbar>
     <ion-title>Footer</ion-title>
   </ion-toolbar>
-</ion-footer>
+</ion-footer> -->

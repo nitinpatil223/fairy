@@ -11,6 +11,8 @@ import { SignupPage } from '../pages/signup/signup';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ListPage } from '../pages/list/list';
 import { ProductsPage } from '../pages/products/products';
+import { FilterPage } from '../pages/filter/filter';
+import { MessagePage } from '../pages/message/message';
 
 @Component({
   templateUrl: 'app.html'
