@@ -24,7 +24,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     // WelcomePage,
     // LoginPage,
     // SignupPage,
-    HelloIonicPage,
+    // HelloIonicPage,
     ItemDetailsPage,
     ListPage,
     // ProductsPage,
