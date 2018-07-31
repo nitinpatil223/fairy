@@ -15,7 +15,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MessagePage {
 
+  hotels;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.hotels = "all";
   }
 
   ionViewDidLoad() {
