@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {FilterPage} from '../filter/filter';
-import {MessagePage} from '../message/message';
+import { MessagePage } from '../message/message';
+import { HotelDetailsPage } from '../hotel-details/hotel-details';
 
 @IonicPage()
 @Component({
@@ -23,5 +24,10 @@ export class HelloIonicPage {
   message() {
     this.navCtrl.push(MessagePage, {}, { animate: true, animation: 'transition', duration: 1000, direction: 'forward' });
   }
+
+  hotelDetails() {
+    this.navCtrl.push(HotelDetailsPage, {}, { animate: true, animation: 'transition', duration: 1000, direction: 'forward' });
+  }
+
 
 }

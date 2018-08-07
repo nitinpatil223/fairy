@@ -12,6 +12,7 @@ import { ListPage } from '../pages/list/list';
 import { ProductsPage } from '../pages/products/products';
 import { FilterPage } from '../pages/filter/filter';
 import { MessagePage } from '../pages/message/message';
+import { HotelDetailsPage } from '../pages/hotel-details/hotel-details';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -20,7 +21,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 @NgModule({
   declarations: [
-    MyApp,
+     MyApp,
     // WelcomePage,
     // LoginPage,
     // SignupPage,
@@ -29,7 +30,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListPage,
     // ProductsPage,
     // FilterPage,
-    // MessagePage
+    // MessagePage,
+    // HotelDetailsPage
 
   ],
   imports: [
@@ -47,7 +49,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListPage,
     ProductsPage,
     FilterPage,
-    MessagePage
+    MessagePage,
+    HotelDetailsPage
 
   ],
   providers: [

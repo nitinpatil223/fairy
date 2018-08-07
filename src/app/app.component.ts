@@ -13,6 +13,7 @@ import { ListPage } from '../pages/list/list';
 import { ProductsPage } from '../pages/products/products';
 import { FilterPage } from '../pages/filter/filter';
 import { MessagePage } from '../pages/message/message';
+import { HotelDetailsPage } from '../pages/hotel-details/hotel-details';
 
 @Component({
   templateUrl: 'app.html'
