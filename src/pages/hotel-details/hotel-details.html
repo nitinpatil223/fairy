@@ -7,7 +7,7 @@
 <ion-header>
 
     <ion-navbar>
-        <ion-title>hotel-details</ion-title>
+        <ion-title></ion-title>
     </ion-navbar>
 
 </ion-header>
@@ -16,11 +16,12 @@
 <ion-content>
     <!-- restaurants details-->
     <div class="image-slider">
-        <ion-slides pager>
+
+        <img src="assets/imgs/d4.jpg">
+
+        <!--    <ion-slides pager>
             <ion-slide>
-                <div class="slide-img">
-                    <img src="assets/imgs/d1.jpg">
-                </div>
+
             </ion-slide>
 
             <ion-slide>
@@ -61,17 +62,98 @@
                     <img src="assets/imgs/d4.jpg">
                 </div>
             </ion-slide>
-        </ion-slides>
+        </ion-slides>-->
         <div class="hotel-content">
-            <div class="rating">4.5</div>
             <div class="footer-content">
                 <h1 class="hotel-name">Kinki - Modern Asian &amp; Molecule Bar</h1>
                 <p class="location">
-                    <ion-icon name="pin"></ion-icon> Bavdhan, Pune</p>
+                    <ion-icon name="pin"></ion-icon> Balewadi High Street, Balewadi, Pune </p>
+                <div class="rating">4.5</div>
+                <p class="view-photos">
+                    <ion-icon name="eye"></ion-icon> View Photos</p>
             </div>
         </div>
     </div>
     <div class="section">
-        <h2>Benchmark</h2>
+        <ion-row class="border-bottom">
+            <ion-col>
+                <p> &#x20B9; 600/- for two (approx)</p>
+                <p class="mb-0">Asian, North Indian</p>
+            </ion-col>
+            <ion-col>
+                <p class="open">Open Now</p>
+                <p text-right class="mb-0">Today 1:00 PM - 12:00 AM</p>
+            </ion-col>
+        </ion-row>
+
+        <ion-row class="action-icons">
+            <ion-col text-center>
+                <ion-icon name="pin"></ion-icon>
+                <p text-center>Map</p>
+            </ion-col>
+            <ion-col text-center>
+                <ion-icon name="call"></ion-icon>
+                <p text-center>Call</p>
+            </ion-col>
+            <ion-col text-center>
+                <ion-icon name="mail"></ion-icon>
+                <p text-center>Email</p>
+            </ion-col>
+            <ion-col text-center>
+                <ion-icon name="apps"></ion-icon>
+                <p text-center>Menu</p>
+            </ion-col>
+        </ion-row>
+
+        <ion-row class="mv-10">
+            <ion-col>
+                <p class="offer">Enjoy 1 + 1 on food & soft beverage for Gold Members</p>
+                <!--<button ion-button color="danger" block class="book-btn">Book a Table</button>-->
+                <p class="offer-small">+ 20% Cashback on Bill Payment</p>
+                <p class="offer-small mb-0">
+                    Offer availed 21 times</p>
+            </ion-col>
+        </ion-row>
+
+        <ion-row class="features">
+            <h2>Features</h2>
+            <ion-col col-6>
+                <ion-icon name="ios-checkmark-circle-outline"></ion-icon> Air Conditioned
+            </ion-col>
+            <ion-col col-6>
+                <ion-icon name="ios-checkmark-circle-outline"></ion-icon> Valet Availabel
+            </ion-col>
+            <ion-col col-6>
+                <ion-icon name="ios-checkmark-circle-outline"></ion-icon> Home Delivery
+            </ion-col>
+            <ion-col col-6>
+                <ion-icon name="ios-checkmark-circle-outline"></ion-icon> Serve Alcohol
+            </ion-col>
+            <ion-col col-6>
+                <ion-icon name="ios-checkmark-circle-outline"></ion-icon> Parking
+            </ion-col>
+            <ion-col col-6>
+                <ion-icon name="ios-checkmark-circle-outline"></ion-icon> Take Away
+            </ion-col>
+            <ion-col col-6>
+                <ion-icon name="ios-checkmark-circle-outline"></ion-icon> Card Accepted
+            </ion-col>
+            <ion-col col-6>
+                <ion-icon name="ios-checkmark-circle-outline"></ion-icon> Wi-Fi
+            </ion-col>
+            <ion-col col-6>
+                <ion-icon name="ios-checkmark-circle-outline"></ion-icon> Bar
+            </ion-col>
+            <ion-col col-6>
+                <ion-icon name="ios-checkmark-circle-outline"></ion-icon> Outdor Sitting
+            </ion-col>
+        </ion-row>
+
     </div>
 </ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+        <button ion-button color="danger" block>Book a Table</button>
+    </ion-toolbar>
+</ion-footer>
