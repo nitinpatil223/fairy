@@ -13,6 +13,7 @@ import { ProductsPage } from '../pages/products/products';
 import { FilterPage } from '../pages/filter/filter';
 import { MessagePage } from '../pages/message/message';
 import { HotelDetailsPage } from '../pages/hotel-details/hotel-details';
+import { BookTablePage } from '../pages/book-table/book-table';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -21,17 +22,18 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 @NgModule({
   declarations: [
-     MyApp,
+    //  MyApp,
     // WelcomePage,
     // LoginPage,
     // SignupPage,
     // HelloIonicPage,
-     ItemDetailsPage,
-     ListPage,
+    ItemDetailsPage,
+    ListPage,
     // ProductsPage,
     // FilterPage,
     // MessagePage,
-    // HotelDetailsPage
+    // HotelDetailsPage,
+    // BookTablePage
 
   ],
   imports: [
@@ -50,7 +52,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ProductsPage,
     FilterPage,
     MessagePage,
-    HotelDetailsPage
+    HotelDetailsPage,
+    BookTablePage
 
   ],
   providers: [

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { BookTablePage } from '../book-table/book-table';
 
 /**
  * Generated class for the HotelDetailsPage page.
@@ -16,6 +17,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class HotelDetailsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  bookTable() {
+    this.navCtrl.push(BookTablePage, {}, { animate: true, animation: 'transition', duration: 1000, direction: 'forward' });
   }
 
   ionViewDidLoad() {
