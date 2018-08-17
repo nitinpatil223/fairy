@@ -18,13 +18,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 @NgModule({
   declarations: [
     MyApp,
-    // WelcomePage,
-   
-    // SignupPage,
-     HelloIonicPage,
-     ItemDetailsPage,
-     ListPage,
-    // ProductsPage
+    WelcomePage,
+    LoginPage,
+    SignupPage,
+    HelloIonicPage,
+    ItemDetailsPage,
+    ListPage,
+    ProductsPage
   ],
   imports: [
     BrowserModule,
