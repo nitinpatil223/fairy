@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { BookTablePage } from '../book-table/book-table';
+import { PrimePage } from '../prime/prime';
 
 /**
  * Generated class for the HotelDetailsPage page.
@@ -21,6 +22,10 @@ export class HotelDetailsPage {
 
   bookTable() {
     this.navCtrl.push(BookTablePage, {}, { animate: true, animation: 'transition', duration: 1000, direction: 'forward' });
+  }
+
+  openPrime() {
+    this.navCtrl.push(PrimePage, {}, { animate: true, animation: 'transition', duration: 1000, direction: 'forward' });
   }
 
   ionViewDidLoad() {

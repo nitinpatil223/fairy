@@ -14,6 +14,8 @@ import { FilterPage } from '../pages/filter/filter';
 import { MessagePage } from '../pages/message/message';
 import { HotelDetailsPage } from '../pages/hotel-details/hotel-details';
 import { BookTablePage } from '../pages/book-table/book-table';
+import { PrimePage } from '../pages/prime/prime';
+import { PrimeDetailsPage } from '../pages/prime-details/prime-details';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -22,7 +24,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 @NgModule({
   declarations: [
-     MyApp,
+      MyApp,
     // WelcomePage,
     // LoginPage,
     // SignupPage,
@@ -33,7 +35,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     // FilterPage,
     // MessagePage,
     // HotelDetailsPage,
-    // BookTablePage
+    // BookTablePage,
+    // PrimePage,
+    // PrimeDetailsPage
 
   ],
   imports: [
@@ -53,7 +57,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     FilterPage,
     MessagePage,
     HotelDetailsPage,
-    BookTablePage
+    BookTablePage,
+    PrimePage,
+    PrimeDetailsPage
 
   ],
   providers: [

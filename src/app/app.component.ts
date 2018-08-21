@@ -15,6 +15,8 @@ import { FilterPage } from '../pages/filter/filter';
 import { MessagePage } from '../pages/message/message';
 import { HotelDetailsPage } from '../pages/hotel-details/hotel-details';
 import { BookTablePage } from '../pages/book-table/book-table';
+import { PrimePage } from '../pages/prime/prime';
+import { PrimeDetailsPage } from '../pages/prime-details/prime-details';
 
 @Component({
   templateUrl: 'app.html'
