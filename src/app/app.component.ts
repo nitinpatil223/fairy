@@ -7,8 +7,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import {WelcomePage } from '../pages/welcome/welcome';
 import { LoginPage } from '../pages/login/login';
+import { LoginWithPage } from '../pages/login-with/login-with';
 import { SignupPage } from '../pages/signup/signup';
-import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
+import { HotelsPage } from '../pages/hotels/hotels';
 import { ListPage } from '../pages/list/list';
 import { ProductsPage } from '../pages/products/products';
 import { FilterPage } from '../pages/filter/filter';

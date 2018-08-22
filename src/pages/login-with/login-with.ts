@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { LoginPage } from '../login/login';
+import {HotelsPage } from '../hotels/hotels';
 
-import { HotelsPage} from '../hotels/hotels';
-import {SignupPage} from '../signup/signup';
 /**
- * Generated class for the LoginPage page.
+ * Generated class for the LoginWithPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -12,22 +12,24 @@ import {SignupPage} from '../signup/signup';
 
 @IonicPage()
 @Component({
-  selector: 'page-login',
-  templateUrl: 'login.html',
+  selector: 'page-login-with',
+  templateUrl: 'login-with.html',
 })
-export class LoginPage {
+export class LoginWithPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad LoginPage');
+  login() {
+    this.navCtrl.push(LoginPage, {}, { animate: true, animation: 'transition', duration: 1000, direction: 'forward' });
   }
+
   HomePage() {
     this.navCtrl.push(HotelsPage, {}, { animate: true, animation: 'transition', duration: 1000, direction: 'forward' });
   }
 
-  signUp() {
-    this.navCtrl.push(SignupPage, {}, { animate: true, animation: 'transition', duration: 1000, direction: 'forward' });
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad LoginWithPage');
   }
+
 }

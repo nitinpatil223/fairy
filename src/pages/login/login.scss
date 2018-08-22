@@ -2,4 +2,18 @@ page-login {
     .list {
         margin-bottom: 32px;
     }
+    .or {
+        span {
+            background-color: #f5f5f5;
+            padding: 10px;
+            color: #000;
+            border-radius: 50%;
+            margin-right: 10px;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+    }
 }

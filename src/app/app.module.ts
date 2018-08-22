@@ -5,8 +5,9 @@ import { MyApp } from './app.component';
 
 import {WelcomePage } from '../pages/welcome/welcome';
 import { LoginPage } from '../pages/login/login';
+import { LoginWithPage } from '../pages/login-with/login-with';
 import { SignupPage } from '../pages/signup/signup';
-import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
+import { HotelsPage } from '../pages/hotels/hotels';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
 import { ProductsPage } from '../pages/products/products';
@@ -24,13 +25,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 @NgModule({
   declarations: [
-      MyApp,
+     MyApp,
     // WelcomePage,
     // LoginPage,
+    // LoginWithPage,
     // SignupPage,
-    // HelloIonicPage,
-    ItemDetailsPage,
-    ListPage,
+    // HotelsPage,
+     ItemDetailsPage,
+     ListPage,
     // ProductsPage,
     // FilterPage,
     // MessagePage,
@@ -49,8 +51,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     WelcomePage,
     LoginPage,
+    LoginWithPage,
     SignupPage,
-    HelloIonicPage,
+    HotelsPage,
     ItemDetailsPage,
     ListPage,
     ProductsPage,
