@@ -18,6 +18,7 @@ import { HotelDetailsPage } from '../pages/hotel-details/hotel-details';
 import { BookTablePage } from '../pages/book-table/book-table';
 import { PrimePage } from '../pages/prime/prime';
 import { PrimeDetailsPage } from '../pages/prime-details/prime-details';
+import { ModalPage } from '../pages/modal/modal';
 
 @Component({
   templateUrl: 'app.html'

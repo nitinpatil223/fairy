@@ -17,6 +17,7 @@ import { HotelDetailsPage } from '../pages/hotel-details/hotel-details';
 import { BookTablePage } from '../pages/book-table/book-table';
 import { PrimePage } from '../pages/prime/prime';
 import { PrimeDetailsPage } from '../pages/prime-details/prime-details';
+import { ModalPage } from '../pages/modal/modal';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -31,15 +32,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     // LoginWithPage,
     // SignupPage,
     // HotelsPage,
-     ItemDetailsPage,
-     ListPage,
+    ItemDetailsPage,
+    ListPage,
     // ProductsPage,
     // FilterPage,
     // MessagePage,
     // HotelDetailsPage,
     // BookTablePage,
     // PrimePage,
-    // PrimeDetailsPage
+    // PrimeDetailsPage,
+    // ModalPage
 
   ],
   imports: [
@@ -62,7 +64,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HotelDetailsPage,
     BookTablePage,
     PrimePage,
-    PrimeDetailsPage
+    PrimeDetailsPage,
+    ModalPage
 
   ],
   providers: [

@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController, ViewController } from 'ionic-angular';
 import { BookTablePage } from '../book-table/book-table';
 import { PrimePage } from '../prime/prime';
+
+
+import { ModalPage } from '../modal/modal';
 
 /**
  * Generated class for the HotelDetailsPage page.
@@ -17,7 +20,17 @@ import { PrimePage } from '../prime/prime';
 })
 export class HotelDetailsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController, public viewCtrl: ViewController) {
+  }
+
+
+  presentModal() {
+    const modal = this.modalCtrl.create(ModalPage);
+    modal.present();
+  }
+
+  dismiss() {
+    this.viewCtrl.dismiss();
   }
 
   bookTable() {
@@ -33,3 +46,4 @@ export class HotelDetailsPage {
   }
 
 }
+

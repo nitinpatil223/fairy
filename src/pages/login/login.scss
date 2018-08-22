@@ -3,6 +3,10 @@ page-login {
         margin-bottom: 32px;
     }
     .or {
+        float: left;
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
         span {
             background-color: #f5f5f5;
             padding: 10px;
@@ -13,7 +17,8 @@ page-login {
             height: 35px;
             display: flex;
             align-items: center;
-            justify-content: center
+            justify-content: center;
+            margin: 0 auto;
         }
     }
 }

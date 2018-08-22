@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 import { LoginPage } from '../login/login';
 import {HotelsPage } from '../hotels/hotels';
 
@@ -17,15 +17,17 @@ import {HotelsPage } from '../hotels/hotels';
 })
 export class LoginWithPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {
   }
+
+
 
   login() {
     this.navCtrl.push(LoginPage, {}, { animate: true, animation: 'transition', duration: 1000, direction: 'forward' });
   }
 
   HomePage() {
-    this.navCtrl.push(HotelsPage, {}, { animate: true, animation: 'transition', duration: 1000, direction: 'forward' });
+    this.navCtrl.setRoot(HotelsPage, {}, { animate: true, animation: 'transition', duration: 1000, direction: 'forward' });
   }
 
   ionViewDidLoad() {

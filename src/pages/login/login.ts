@@ -24,7 +24,7 @@ export class LoginPage {
     console.log('ionViewDidLoad LoginPage');
   }
   HomePage() {
-    this.navCtrl.push(HotelsPage, {}, { animate: true, animation: 'transition', duration: 1000, direction: 'forward' });
+    this.navCtrl.setRoot(HotelsPage, {}, { animate: true, animation: 'transition', duration: 1000, direction: 'forward' });
   }
 
   signUp() {
