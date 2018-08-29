@@ -7,14 +7,18 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import {WelcomePage } from '../pages/welcome/welcome';
 import { LoginPage } from '../pages/login/login';
+import { LoginWithPage } from '../pages/login-with/login-with';
 import { SignupPage } from '../pages/signup/signup';
-import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
+import { HotelsPage } from '../pages/hotels/hotels';
 import { ListPage } from '../pages/list/list';
 import { ProductsPage } from '../pages/products/products';
 import { FilterPage } from '../pages/filter/filter';
 import { MessagePage } from '../pages/message/message';
 import { HotelDetailsPage } from '../pages/hotel-details/hotel-details';
 import { BookTablePage } from '../pages/book-table/book-table';
+import { PrimePage } from '../pages/prime/prime';
+import { PrimeDetailsPage } from '../pages/prime-details/prime-details';
+import { ModalPage } from '../pages/modal/modal';
 
 @Component({
   templateUrl: 'app.html'

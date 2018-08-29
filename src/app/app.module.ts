@@ -5,8 +5,9 @@ import { MyApp } from './app.component';
 
 import {WelcomePage } from '../pages/welcome/welcome';
 import { LoginPage } from '../pages/login/login';
+import { LoginWithPage } from '../pages/login-with/login-with';
 import { SignupPage } from '../pages/signup/signup';
-import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
+import { HotelsPage } from '../pages/hotels/hotels';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
 import { ProductsPage } from '../pages/products/products';
@@ -14,6 +15,9 @@ import { FilterPage } from '../pages/filter/filter';
 import { MessagePage } from '../pages/message/message';
 import { HotelDetailsPage } from '../pages/hotel-details/hotel-details';
 import { BookTablePage } from '../pages/book-table/book-table';
+import { PrimePage } from '../pages/prime/prime';
+import { PrimeDetailsPage } from '../pages/prime-details/prime-details';
+import { ModalPage } from '../pages/modal/modal';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -23,17 +27,21 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 @NgModule({
   declarations: [
      MyApp,
-    WelcomePage,
-    LoginPage,
-    SignupPage,
-    HelloIonicPage,
+    // WelcomePage,
+    // LoginPage,
+    // LoginWithPage,
+    // SignupPage,
+    // HotelsPage,
     ItemDetailsPage,
     ListPage,
-    ProductsPage,
-    FilterPage,
-    MessagePage,
-    HotelDetailsPage,
-    BookTablePage
+    // ProductsPage,
+    // FilterPage,
+    // MessagePage,
+    // HotelDetailsPage,
+    // BookTablePage,
+    // PrimePage,
+    // PrimeDetailsPage,
+    // ModalPage
 
   ],
   imports: [
@@ -45,15 +53,19 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     WelcomePage,
     LoginPage,
+    LoginWithPage,
     SignupPage,
-    HelloIonicPage,
+    HotelsPage,
     ItemDetailsPage,
     ListPage,
     ProductsPage,
     FilterPage,
     MessagePage,
     HotelDetailsPage,
-    BookTablePage
+    BookTablePage,
+    PrimePage,
+    PrimeDetailsPage,
+    ModalPage
 
   ],
   providers: [

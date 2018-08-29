@@ -1,0 +1,25 @@
+page-modal {
+    ion-header {
+        .bar-button {
+            font-size: 3rem;
+            color: #000;
+        }
+    }
+    .scroll-content {
+        margin-top: 44px;
+        display: flex;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.59);
+        ion-slides {
+            height: 175px;
+            .swiper-slide {
+                img {
+                    width: 100%;
+                }
+            }
+            .swiper-pagination {
+                display: none;
+            }
+        }
+    }
+}

@@ -19,7 +19,26 @@
     <img class="logo" src="assets/imgs/logo.png">
 
 
-    <button ion-button color="danger" block (click)="login()">Login</button>
-    <button ion-button outline color="secondary" margin-top block>Login with Gmail</button>
+    <button class="no-border" ion-button block outline color="danger" text-left icon-start>
+    <ion-icon name="apps"></ion-icon>
+     Top Restaurant
+    </button>
+
+    <button class="no-border" ion-button block outline color="danger" icon-start>
+      <ion-icon name="book"></ion-icon>
+      Exclusive Offers
+    </button>
+    <button class="no-border" ion-button block outline color="danger" icon-start>
+        <ion-icon name="bulb"></ion-icon>
+      Free Bookings
+      </button>
+    <button class="no-border" ion-button block outline color="danger" icon-start>
+        <ion-icon name="home"></ion-icon>
+        Many More
+        </button>
+    <button ion-button color="secondary" round (click)="login()">Get Started &nbsp;&nbsp;<ion-icon name="arrow-round-forward"></ion-icon></button>
+
+    <!-- <button ion-button color="danger" block (click)="login()">Login</button>
+    <button ion-button outline color="secondary" margin-top block>Login with Gmail</button> -->
 
 </ion-content>

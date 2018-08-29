@@ -6,13 +6,18 @@ import { HotelDetailsPage } from '../hotel-details/hotel-details';
 
 @IonicPage()
 @Component({
-  selector: 'page-hello-ionic',
-  templateUrl: 'hello-ionic.html'
+  selector: 'page-hotels',
+  templateUrl: 'hotels.html'
 })
-export class HelloIonicPage {
+export class HotelsPage {
   hotels;
+  public show = true;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.hotels = "all";
+  }
+
+  showPrime() {
+    this.show = !this.show;
   }
 
  

@@ -6,30 +6,35 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Login</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>Login</ion-title>
+    </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <ion-list>
+    <ion-list>
 
-    <ion-item>
-      <ion-label floating>Username</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
-  
-    <ion-item>
-      <ion-label floating>Password</ion-label>
-      <ion-input type="password"></ion-input>
-    </ion-item>
-  
-  </ion-list>
-  <div>
-    <button ion-button color="danger" block (click)="home()">Login</button>
-    <button ion-button color="secondary" block clear text-left>Forgot Password?</button>
-    <button ion-button color="secondary" outline block (click)="signUp()">Sign Up</button>
-  </div>
+        <ion-item>
+            <ion-label floating>Username</ion-label>
+            <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Password</ion-label>
+            <ion-input type="password"></ion-input>
+        </ion-item>
+
+    </ion-list>
+    <div>
+        <button ion-button color="danger" block (click)="HomePage()">Login</button>
+        <button class="pdl0" ion-button color="secondary" clear text-left float-left>Forgot Password?</button>
+        <button class="pdr0" ion-button color="secondary" clear text-right float-right (click)="signUp()">Sign Up</button>
+        <div class="or"><span>OR</span></div>
+        <button class="gmail" ion-button outline color="primary" outline margin-top block> <ion-icon name="logo-googleplus"></ion-icon> Login with Gmail</button>
+        <button class="facebook" ion-button outline color="primary" margin-top block>  <ion-icon name="logo-facebook"></ion-icon> Login with Facebook</button>
+        <button ion-button color="dark" clear block (click)="HomePage()">Continue without login &nbsp;&nbsp;
+        <ion-icon name="arrow-round-forward"></ion-icon></button>
+    </div>
 </ion-content>

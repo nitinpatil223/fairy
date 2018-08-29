@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {LoginPage} from '../login/login';
+import { HotelsPage } from '../hotels/hotels';
+import { LoginPage } from '../login/login';
 
 /**
  * Generated class for the WelcomePage page.
@@ -26,6 +27,8 @@ export class WelcomePage {
   login() {
     this.navCtrl.push(LoginPage, {}, { animate: true, animation: 'transition', duration: 1000, direction: 'forward' });
   }
+
+
 
   
 

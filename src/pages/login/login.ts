@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import {HelloIonicPage} from '../hello-ionic/hello-ionic';
+import { HotelsPage} from '../hotels/hotels';
 import {SignupPage} from '../signup/signup';
 /**
  * Generated class for the LoginPage page.
@@ -23,8 +23,8 @@ export class LoginPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
   }
-  home() {
-    this.navCtrl.setRoot(HelloIonicPage, {}, { animate: true, animation: 'transition', duration: 1000, direction: 'forward' });
+  HomePage() {
+    this.navCtrl.setRoot(HotelsPage, {}, { animate: true, animation: 'transition', duration: 1000, direction: 'forward' });
   }
 
   signUp() {

@@ -18,58 +18,13 @@
     <div class="image-slider">
 
         <img src="assets/imgs/d4.jpg">
-
-        <!--    <ion-slides pager>
-            <ion-slide>
-
-            </ion-slide>
-
-            <ion-slide>
-                <div class="slide-img">
-                    <img src="assets/imgs/d2.jpg">
-                </div>
-            </ion-slide>
-
-            <ion-slide>
-                <div class="slide-img">
-                    <img src="assets/imgs/d3.jpg">
-                </div>
-            </ion-slide>
-            <ion-slide>
-                <div class="slide-img">
-                    <img src="assets/imgs/d4.jpg">
-                </div>
-            </ion-slide>
-            <ion-slide>
-                <div class="slide-img">
-                    <img src="assets/imgs/d1.jpg">
-                </div>
-            </ion-slide>
-
-            <ion-slide>
-                <div class="slide-img">
-                    <img src="assets/imgs/d2.jpg">
-                </div>
-            </ion-slide>
-
-            <ion-slide>
-                <div class="slide-img">
-                    <img src="assets/imgs/d3.jpg">
-                </div>
-            </ion-slide>
-            <ion-slide>
-                <div class="slide-img">
-                    <img src="assets/imgs/d4.jpg">
-                </div>
-            </ion-slide>
-        </ion-slides>-->
         <div class="hotel-content">
             <div class="footer-content">
                 <h1 class="hotel-name">Kinki - Modern Asian &amp; Molecule Bar</h1>
                 <p class="location">
                     <ion-icon name="pin"></ion-icon> Balewadi High Street, Balewadi, Pune </p>
                 <div class="rating">4.5</div>
-                <p class="view-photos">
+                <p class="view-photos" (click)="presentModal()">
                     <ion-icon name="eye"></ion-icon> View Photos</p>
             </div>
         </div>
@@ -105,13 +60,25 @@
             </ion-col>
         </ion-row>
 
-        <ion-row class="mv-10">
+        <!-- <ion-row class="mv-10">
             <ion-col>
                 <p class="offer">Enjoy 1 + 1 on food & soft beverage for Gold Members</p>
-                <!--<button ion-button color="danger" block class="book-btn">Book a Table</button>-->
+                <button ion-button color="danger" block class="book-btn">Book a Table</button>
                 <p class="offer-small">+ 20% Cashback on Bill Payment</p>
                 <p class="offer-small mb-0">
                     Offer availed 21 times</p>
+            </ion-col>
+        </ion-row> -->
+
+        <ion-row class="mv-10">
+            <ion-col>
+                <p class="offer" float-left>Prime Members <br> (1+1 Drink)</p>
+
+                <p class="offer2" float-left>No Waiting</p>
+            </ion-col>
+            <ion-col>
+                <button ion-button color="danger" float-right outline class="book-btn" (click)="openPrime()">Open Prime</button>
+                <button ion-button color="secondary" float-right outline class="book-btn no-waiting-btn" (click)="bookTable();">Book Table</button>
             </ion-col>
         </ion-row>
 
