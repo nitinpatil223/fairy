@@ -1,6 +1,4 @@
 // http://ionicframework.com/docs/theming/
-
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -14,9 +12,7 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
-
 // header
-
 ion-header {
     .toolbar-title {
         text-align: center;
@@ -38,6 +34,7 @@ ion-header {
             min-width: inherit;
             position: relative;
             z-index: 1;
+            color: #f53d3d;
             .back-button-icon {
                 padding: 0 5px;
             }
@@ -47,14 +44,14 @@ ion-header {
         }
     }
 }
-//inputs//
 
+//inputs//
 ion-list {
     .item-block:first-child {
-        border-top: 0 !important; 
+        border-top: 0 !important;
     }
     .item-block:last-child {
-        border-bottom: 0 !important; 
+        border-bottom: 0 !important;
         .item-inner {
             border-bottom: 0.55px solid #c8c7cc !important;
         }
@@ -67,25 +64,28 @@ ion-list {
     }
 }
 
-
-
 //buttons//
 .button {
-    height: 3.6rem;
+    height: 4rem;
+    box-shadow: none;
 }
+
 .bar-button {
     font-size: 1rem;
     .back-button-text {
         display: none;
     }
 }
+
 .bar-button[icon-only] {
     min-width: 2em !important;
     margin: 0;
     ion-icon {
-        min-width: inherit !important;;
+        min-width: inherit !important;
+        ;
     }
 }
+
 .small-custom-button {
     height: inherit;
     font-size: 13px;
@@ -96,13 +96,26 @@ ion-list {
     font-weight: normal;
 }
 
-// cards
+ion-footer {
+    ion-toolbar {
+        min-height: 50px!important;
+        padding: 0!important;
+        .button {
+            height: 50px!important;
+            border-radius: 0!important;
+            margin: 0!important;
+            font-size: 15px;
+        }
+    }
+}
 
+// cards
 .custom-card {
     margin-left: 0;
     margin-right: 0;
     width: calc(100% - 0px);
 }
+
 .card {
     ion-card-header {
         padding: 10px;
@@ -114,13 +127,35 @@ ion-list {
     }
 }
 
-//slides
-
-
-
+//segment
+.segment {
+    background-color: #fff;
+    margin: 10px 0;
+    .segment-button {
+        font-size: 13px !important;
+        height: 3.2rem!important;
+        line-height: 3rem!important;
+        color: #656464;
+        &.segment-activated {
+            border-color: #f53d3d;
+            color: #f53d3d;
+        }
+    }
+}
 
 //common
 .mt0 {
     margin-top: 0 !important;
 }
 
+.pd3 {
+    padding: 3px;
+}
+
+.pdl0 {
+    padding-left: 0 !important;
+}
+
+.pdr0 {
+    padding-right: 0 !important;
+}
