@@ -1,0 +1,94 @@
+page-membership {
+    .scroll-content {
+        background-color: #f5f5f5;
+    }
+    .prime-overlay {
+        position: relative;
+        height: 180px;
+        width: 100%;
+        margin-bottom: 0px;
+        overflow: hidden;
+        border-radius: 2px;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+        .prime-content {
+            position: absolute;
+            bottom: 0;
+            color: #fff;
+            z-index: 1;
+            height: 100%;
+            padding: 10px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.47);
+            text-align: center;
+        }
+        .close {
+            position: absolute;
+            top: 0px;
+            right: 8px;
+            z-index: 10;
+            padding: 0;
+            height: auto;
+            background-color: transparent;
+            font-size: 20px;
+            color: #fff;
+        }
+        .prime-btn {
+            height: 3.5rem;
+            font-size: 15px;
+            color: #000000;
+            background-color: #ffd80e;
+        }
+        ion-label {
+            margin: 8px 8px 11px 0 !important;
+            font-size: 22px !important;
+            span {
+                font-size: 14px;
+            }
+        }
+        .price {
+            font-size: 25px;
+            margin: 20px 0;
+            span {
+                font-size: 14px;
+                text-decoration: line-through;
+            }
+        }
+    }
+    .section {
+        padding: 16px;
+        .mem-title {
+            color: #02535b;
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 0;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+                padding: 10px;
+                margin-bottom: 10px;
+                border-radius: 4px;
+                background-color: #fff;
+                font-size: 14px;
+                line-height: 18px;
+                color: #a9a8a8;
+                font-weight: 400;
+                font-weight: 400;
+                box-shadow: 0px 1px 1px #ccc;
+                div {
+                    color: #02535b;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

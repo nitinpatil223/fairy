@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {FilterPage} from '../filter/filter';
 import { MessagePage } from '../message/message';
 import { HotelDetailsPage } from '../hotel-details/hotel-details';
+import { MembershipPage } from '../membership/membership';
 
 @IonicPage()
 @Component({
@@ -32,6 +33,10 @@ export class HotelsPage {
 
   hotelDetails() {
     this.navCtrl.push(HotelDetailsPage, {}, { animate: true, animation: 'transition', duration: 1000, direction: 'forward' });
+  }
+
+  membership() {
+    this.navCtrl.push(MembershipPage, {}, { animate: true, animation: 'transition', duration: 1000, direction: 'forward' });
   }
 
 

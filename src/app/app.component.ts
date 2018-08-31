@@ -19,6 +19,8 @@ import { BookTablePage } from '../pages/book-table/book-table';
 import { PrimePage } from '../pages/prime/prime';
 import { PrimeDetailsPage } from '../pages/prime-details/prime-details';
 import { ModalPage } from '../pages/modal/modal';
+import { MembershipPage } from '../pages/membership/membership';
+import { PaymentModalPage } from '../pages/payment-modal/payment-modal';
 
 @Component({
   templateUrl: 'app.html'

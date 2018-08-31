@@ -2,7 +2,6 @@ page-hotels {
     .scroll-content {
         background-color: #f5f5f5;
     }
-
     .prime-overlay {
         position: relative;
         height: 110px;
@@ -10,7 +9,6 @@ page-hotels {
         margin-bottom: 10px;
         overflow: hidden;
         border-radius: 2px;
-
         img {
             height: 100%;
             width: 100%;
@@ -28,13 +26,13 @@ page-hotels {
         }
         .close {
             position: absolute;
-            top: -5px;
-            right: 5px;
+            top: 0px;
+            right: 8px;
             z-index: 10;
             padding: 0;
             height: auto;
             background-color: transparent;
-            font-size: 25px;
+            font-size: 20px;
             color: #fff;
         }
         .prime-btn {
@@ -48,7 +46,6 @@ page-hotels {
             font-size: 18px !important;
         }
     }
-   
     .custom-card {
         .searchbar {
             padding: 0 4px;

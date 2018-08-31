@@ -1,6 +1,6 @@
 page-welcome {
     .logo {
-        margin: 5rem 0 3rem;
+        margin: 5rem 0 0rem;
     }
     .button {
         margin: 20px 0;
@@ -9,8 +9,13 @@ page-welcome {
         border: 0;
         font-size: 1.8rem;
         text-transform: capitalize;
+        padding: 0 70px;
+        .button-inner {
+            justify-content: flex-start;
+        }
         ion-icon {
-            background-color: #f5f5f5;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
             padding: 10px;
             color: #000;
             border-radius: 50%;
