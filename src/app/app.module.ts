@@ -27,21 +27,21 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 @NgModule({
   declarations: [
      MyApp,
-    // WelcomePage,
-    // LoginPage,
-    // LoginWithPage,
-    // SignupPage,
-    // HotelsPage,
+     WelcomePage,
+     LoginPage,
+    LoginWithPage,
+    SignupPage,
+    HotelsPage,
     ItemDetailsPage,
     ListPage,
-    // ProductsPage,
-    // FilterPage,
-    // MessagePage,
-    // HotelDetailsPage,
-    // BookTablePage,
-    // PrimePage,
-    // PrimeDetailsPage,
-    // ModalPage
+     ProductsPage,
+     FilterPage,
+     MessagePage,
+     HotelDetailsPage,
+     BookTablePage,
+     PrimePage,
+     PrimeDetailsPage,
+     ModalPage
 
   ],
   imports: [
