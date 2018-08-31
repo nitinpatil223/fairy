@@ -17,7 +17,16 @@
 
 
 <ion-content padding>
-
+       
+<div class="prime-overlay" *ngIf="show">
+        <img src="assets/imgs/prime-bg.png">
+    <button ion-button class="close" (click)="showPrime()" ><ion-icon name="close"></ion-icon></button>
+    <div class="prime-content">
+    <ion-label>Your not a prime member</ion-label>
+    <button ion-button class="prime-btn">Buy a Prime</button>
+</div>
+   
+</div>
     <!-- search location -->
     <ion-card class="custom-card mt0">
         <ion-card-header>
