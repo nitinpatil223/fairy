@@ -36,17 +36,27 @@ page-prime-details {
                         position: absolute;
                         bottom: 0;
                         left: 0;
-                        padding: 10px;
+                        padding: 0px;
                         width: 100%;
                         .hotel-name {
                             font-size: 20px;
                             color: #fff;
-                            margin: 0 0 20px;
+                            margin: 0 0 20px 20px;
                             width: 80%;
                         }
                         p {
                             margin: 0 0 0px;
                             font-size: 13px;
+                            font-weight: 100;
+                        }
+                        .foot-info {
+                            background-color: rgba(0, 0, 0, 0.7);
+                            float: left;
+                            width: 100%;
+                            padding: 10px;
+                            margin-bottom: 0px;
+                            display: flex;
+                            align-items: flex-end;
                         }
                         .location {
                             width: 55%;
@@ -58,6 +68,8 @@ page-prime-details {
                         }
                         .view-photos {
                             float: right;
+                            width: 45%;
+                            text-align: right;
                         }
                         .rating {
                             background-color: #34a853;

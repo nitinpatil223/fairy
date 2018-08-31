@@ -16,35 +16,32 @@
 <ion-content>
     <div class="prime-overlay">
         <img src="assets/imgs/prime-bg.png">
-        <div class="prime-content">
-            <ion-label>Early bird price <span> (80% off)</span></ion-label>
+        <div class="prime-content buy-prime">
+                <img class="logo" src="assets/imgs/logo-prime.png">
+                <div class="newmoto">Experience new places in your city every day<br> and enjoy limitless dining privileges!</div>
+            <!-- <ion-label>Early bird price <span> (80% off)</span></ion-label>
             <h2 class="price">&#x20B9;99 <span>&#x20B9;499</span></h2>
-            <button ion-button class="prime-btn" (click)="paymentModal()">Buy Membership</button>
+            <button ion-button class="prime-btn">Buy Membership</button> -->
+           <div class="offers-wrap"> <p class="offer">1+1 on Food</p><span class="or">OR</span> <p class="offer">1+1 on Drink</p></div>
+           <div class="grab-title">  Grab your membership only at<span class="price">&#x20B9;99</span>  <span class="end-amnt">&#x20B9;499</span> before it's sold out! </div>
         </div>
     </div>
     <div class="section">
-        <h2 class="mem-title">As a Prime, you enjoy</h2>
+        <h2 class="mem-title">Select your payment method</h2>
         <ul>
             <li>
-                <div>Instant Rewards</div>
-
-                <p>5% instant discount on current booking and extra 500 OYO Money</p>
+                <ion-icon name="card"></ion-icon> Debit Card
+            </li>
+            <li>
+                    <ion-icon name="card"></ion-icon> Credit Card
 
             </li>
             <li>
-                <div>Super OYO Benefits</div>
-                <p>10% additional discount on your future stays at the Wizard Base hotel.</p>
-                <p>5% additional discount at all Wizard member hotels.</p>
+                    <ion-icon name="globe"></ion-icon> Net Banking
 
             </li>
             <li>
-                <div>Unlimited Usage</div>
-                <p>Use as much. Experience true infinity</p>
-
-            </li>
-            <li>
-                <div>Exclusive Privileges</div>
-                <p>Enjoy Wizard-exclusive, exciting deals at OYO</p>
+                    <ion-icon name="cash"></ion-icon> Wallet
 
             </li>
         </ul>
