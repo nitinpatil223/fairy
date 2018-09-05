@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { HotelsPage} from '../hotels/hotels';
 import {SignupPage} from '../signup/signup';
+import {ForgotPasswordPage} from '../forgot-password/forgot-password'
 /**
  * Generated class for the LoginPage page.
  *
@@ -29,5 +30,8 @@ export class LoginPage {
 
   signUp() {
     this.navCtrl.push(SignupPage, {}, { animate: true, animation: 'transition', duration: 1000, direction: 'forward' });
+  }
+  forgotPassword() {
+    this.navCtrl.push(ForgotPasswordPage, {}, { animate: true, animation: 'transition', duration: 1000, direction: 'forward' });
   }
 }

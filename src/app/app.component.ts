@@ -21,6 +21,7 @@ import { PrimeDetailsPage } from '../pages/prime-details/prime-details';
 import { ModalPage } from '../pages/modal/modal';
 import { MembershipPage } from '../pages/membership/membership';
 import { PaymentModalPage } from '../pages/payment-modal/payment-modal';
+import {ForgotPasswordPage} from '../pages/forgot-password/forgot-password'
 
 @Component({
   templateUrl: 'app.html'
