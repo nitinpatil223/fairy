@@ -11,13 +11,17 @@ page-welcome {
     .button {
         margin: 20px 0;
     }
+    .get-start-btn {
+        padding: 22px 40px;
+        font-size: 18px;
+    }
     .no-border.button {
         border: 0;
-        font-size: 1.8rem;
+        font-size: 20px;
         text-transform: capitalize;
-        padding: 0 70px;
+        padding: 0 55px;
         font-weight: bold;
-        color:#000 !important;
+        color: #000 !important;
         .button-inner {
             justify-content: flex-start;
         }
@@ -27,7 +31,7 @@ page-welcome {
             padding: 10px;
             color: #000;
             border-radius: 50%;
-            margin-right: 20px;
+            margin-right: 30px;
             width: 35px;
             height: 35px;
             display: flex;

@@ -5,12 +5,10 @@ import { MyApp } from './app.component';
 
 import {WelcomePage } from '../pages/welcome/welcome';
 import { LoginPage } from '../pages/login/login';
-import { LoginWithPage } from '../pages/login-with/login-with';
+
 import { SignupPage } from '../pages/signup/signup';
 import { HotelsPage } from '../pages/hotels/hotels';
-import { ItemDetailsPage } from '../pages/item-details/item-details';
-import { ListPage } from '../pages/list/list';
-import { ProductsPage } from '../pages/products/products';
+
 import { FilterPage } from '../pages/filter/filter';
 import { MessagePage } from '../pages/message/message';
 import { HotelDetailsPage } from '../pages/hotel-details/hotel-details';
@@ -20,7 +18,9 @@ import { PrimeDetailsPage } from '../pages/prime-details/prime-details';
 import { ModalPage } from '../pages/modal/modal';
 import { PaymentModalPage } from '../pages/payment-modal/payment-modal';
 import { MembershipPage } from '../pages/membership/membership';
-import {ForgotPasswordPage} from '../pages/forgot-password/forgot-password'
+import { ForgotPasswordPage } from '../pages/forgot-password/forgot-password'
+import { ProfilePage } from '../pages/profile/profile'
+import { EditProfilePage } from '../pages/edit-profile/edit-profile'
 
 
 
@@ -33,12 +33,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
      MyApp,
     //   WelcomePage,
     //  LoginPage,
-    //  LoginWithPage,
     //  SignupPage,
     //  HotelsPage,
-     ItemDetailsPage,
-    ListPage,
-    //   ProductsPage,
     //   FilterPage,
     //   MessagePage,
     //   HotelDetailsPage,
@@ -48,7 +44,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     //  ModalPage,
     //  MembershipPage,
     //  PaymentModalPage,
-    //  ForgotPasswordPage
+    // ForgotPasswordPage,
+    // ProfilePage,
+    // EditProfilePage
 
   ],
   imports: [
@@ -60,12 +58,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     WelcomePage,
     LoginPage,
-    LoginWithPage,
     SignupPage,
     HotelsPage,
-    ItemDetailsPage,
-    ListPage,
-    ProductsPage,
     FilterPage,
     MessagePage,
     HotelDetailsPage,
@@ -75,7 +69,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ModalPage,
     MembershipPage,
     PaymentModalPage,
-    ForgotPasswordPage
+    ForgotPasswordPage,
+    ProfilePage,
+    EditProfilePage
 
   ],
   providers: [
