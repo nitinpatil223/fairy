@@ -14,5 +14,36 @@
 
 
 <ion-content padding>
+        <div class="profile-wrap">
+                <div class="profil-pic">
+                    <img src="../assets/imgs/prof-img.jpg">
+                    <input type="file" name="myfile"/>
+                    <ion-icon name="create" class="edit-icon"></ion-icon>
+                </div>
+            </div>
+    <ion-list>
+        <ion-item>
+            <ion-label floating>Name</ion-label>
+            <ion-input type="text"></ion-input>
+        </ion-item>
 
+        <ion-item>
+            <ion-label floating>Email</ion-label>
+            <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+                <ion-label floating>Phone</ion-label>
+                <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+                <ion-label floating>Address</ion-label>
+                <ion-textarea name="Your address"></ion-textarea>
+        </ion-item>
+       
+    </ion-list>
 </ion-content>
+<ion-footer>
+        <ion-toolbar>
+            <button ion-button color="danger" block>Save</button>
+        </ion-toolbar>
+    </ion-footer>

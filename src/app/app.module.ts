@@ -18,9 +18,11 @@ import { PrimeDetailsPage } from '../pages/prime-details/prime-details';
 import { ModalPage } from '../pages/modal/modal';
 import { PaymentModalPage } from '../pages/payment-modal/payment-modal';
 import { MembershipPage } from '../pages/membership/membership';
-import { ForgotPasswordPage } from '../pages/forgot-password/forgot-password'
-import { ProfilePage } from '../pages/profile/profile'
-import { EditProfilePage } from '../pages/edit-profile/edit-profile'
+import { ForgotPasswordPage } from '../pages/forgot-password/forgot-password';
+import { ProfilePage } from '../pages/profile/profile';
+import { EditProfilePage } from '../pages/edit-profile/edit-profile';
+import { ChangePasswordPage } from '../pages/change-password/change-password';
+import { YourOrdersPage } from '../pages/your-orders/your-orders'
 
 
 
@@ -46,7 +48,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     //  PaymentModalPage,
     // ForgotPasswordPage,
     // ProfilePage,
-    // EditProfilePage
+    // EditProfilePage,
+    // ChangePasswordPage,
+    // YourOrdersPage
 
   ],
   imports: [
@@ -71,7 +75,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     PaymentModalPage,
     ForgotPasswordPage,
     ProfilePage,
-    EditProfilePage
+    EditProfilePage,
+    ChangePasswordPage,
+    YourOrdersPage
 
   ],
   providers: [

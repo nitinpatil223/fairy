@@ -1,16 +1,40 @@
+
+
+
 <ion-menu [content]="content">
 
     <ion-header>
         <ion-toolbar>
-            <ion-title>Pages</ion-title>
+            <ion-title>   <img class="logo" src="assets/imgs/new-logo.png"></ion-title>
         </ion-toolbar>
     </ion-header>
 
     <ion-content>
         <ion-list>
-            <button ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
-      </button>
+            <button class="prof-btn" menuClose ion-item icon-left (click)="nav.push(pages2.profilePage)">
+                    <div class="profile-wrap">
+                            <div class="profil-pic">
+                                <img src="../assets/imgs/prof-img.jpg">
+                            </div>
+                           <div class="info"> <h3>Sachin Sharma</h3>
+                            <p>
+                                <ion-icon name="pin"></ion-icon> Pune
+                            </p>
+                        </div>
+                        </div>
+            </button>
+            <button menuClose ion-item icon-left (click)="nav.push(pages2.yourOrdersPage)">
+                    <ion-icon name="basket"></ion-icon>
+                Your Orders
+            </button>
+            <button menuClose ion-item icon-left (click)="nav.push(pages2.changePasswordPage)">
+                    <ion-icon name="lock"></ion-icon>
+                Change Password
+            </button>
+            <button menuClose ion-item icon-left (click)="logout()">
+                    <ion-icon name="log-out"></ion-icon>
+                Logout
+            </button>
         </ion-list>
     </ion-content>
 

@@ -19,8 +19,10 @@ import { ModalPage } from '../pages/modal/modal';
 import { MembershipPage } from '../pages/membership/membership';
 import { PaymentModalPage } from '../pages/payment-modal/payment-modal';
 import { ForgotPasswordPage } from '../pages/forgot-password/forgot-password';
-import { ProfilePage } from '../pages/profile/profile'
-import { EditProfilePage } from '../pages/edit-profile/edit-profile'
+import { ProfilePage } from '../pages/profile/profile';
+import { EditProfilePage } from '../pages/edit-profile/edit-profile';
+import { ChangePasswordPage } from '../pages/change-password/change-password';
+import { YourOrdersPage } from '../pages/your-orders/your-orders'
 
 @Component({
   templateUrl: 'app.html'
@@ -31,20 +33,31 @@ export class MyApp {
   // make HelloIonicPage the root (or first) page
   rootPage = WelcomePage;
   pages: Array<{title: string, component: any}>;
+  pages2: any;
 
   constructor(
     public platform: Platform,
     public menu: MenuController,
     public statusBar: StatusBar,
-    public splashScreen: SplashScreen
+    public splashScreen: SplashScreen,
+ 
   ) {
     this.initializeApp();
 
     // set our app's pages
     this.pages = [
       { title: 'ProfilePage', component: ProfilePage },
+      { title: 'yourOrdersPage', component: YourOrdersPage },
+      { title: 'changePasswordPage', component: ChangePasswordPage },
+     
      
     ];
+    this.pages2 = {
+      profilePage: ProfilePage,
+      yourOrdersPage: YourOrdersPage,
+      changePasswordPage: ChangePasswordPage,
+
+    } 
   }
 
   initializeApp() {
@@ -60,6 +73,10 @@ export class MyApp {
     // close the menu when clicking a link from the menu
     this.menu.close();
     // navigate to the new page if it is not the current page
-    this.nav.setRoot(page.component);
+    this.nav.push(page.component);
   }
+  logout() {
+    this.nav.push(LoginPage, {}, { animate: true, animation: 'transition', duration: 1000, direction: 'forward' });
+  }
+
 }
